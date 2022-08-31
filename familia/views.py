@@ -19,3 +19,15 @@ def familiar(request):
     contexto= Context(personas)
     documento=plantilla.render(contexto)
     return HttpResponse(documento)
+
+
+
+
+def inicio(request):
+    return render (request, "familia/inicio.html")
+     
+def obras_de_arte(request):
+     return render(request, "familia/obras_de_arte.html")
+
+def artistas(request):
+         return render(request, "familia/artistas.html")
