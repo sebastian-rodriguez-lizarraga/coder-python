@@ -1,0 +1,37 @@
+{% extends "familia/padre.html" %}
+
+{% load static %}  
+
+{% block titulo_de_pagina %}   
+<h1 class=""mb-5> Formulario de artistas famosos</h1>
+{% endblock %}     
+
+
+{% block contenido_que_cambia %}  
+
+<h1>Este es el contenido que cambio</h1>
+
+<!-- <form action="{% url 'obraFormulario' %}", method = "POST"> {% csrf_token %}
+    <p>Obra: <input type = "text" name= "nombre">  </p>
+    <p>Año: <input type = "number" name= "anio">  </p>
+    <p>Estilo: <input type = "text" name= "estilo">  </p>
+    
+<input type="submit" value="Enviar">
+</form>
+
+ -->
+<form action="{% url 'artistaFormulario' %}", method="POST"> {% csrf_token %}
+
+    <table>
+        {{ form.as_table  }}
+     </table>
+    
+    <input type="submit", value="Enviar">
+
+</form>
+
+
+
+
+{% endblock %}    
+

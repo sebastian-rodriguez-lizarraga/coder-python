@@ -1,12 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Obras de Arte famosas</title>
-</head>
-<body>
-    <h1>Página de obras de arte famosas</h1>
-</body>
-</html>
+{% extends "familia/padre.html" %}
+<!-- Herencia de templates, para menues de navegacion, footer y demas cosas que son comunes a todas las paginas-->
+
+{% load static %}  
+
+{% block titulo_de_pagina %}   
+<h1 class=""mb-5>Obras de Arte Famosas</h1>
+{% endblock %}     
+
+
+{% block contenido_que_cambia %}  
+
+<h1>Este es el contenido de las obras de arte mas famosas del mundo</h1>
+
+{% endblock %}    
